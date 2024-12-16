@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maqueta M2go</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS Styles-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="body-main-container bg-white">
+      <div class="top-container">
+        <!-- Navbar -->
+        <header>
+          <nav
+            class="container-fluid mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-3"
+          >
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+              <img src="./icons/logo.svg" alt="Logo" />
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+              id="menu-toggle"
+              class="md:hidden text-gray-700 focus:outline-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+
+            <!-- Navigation Links (Initially hidden on mobile) -->
+            <ul
+              id="navbar"
+              class="hidden md:flex flex-col md:flex-row space-x-6 items-center gap-[20px]"
+            >
+              <li>
+                <a href="#" class="text-[12px] font-bold text-[#303030]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[12px] text-[#303030]">Nosotros</a>
+              </li>
+              <li>
+                <a href="#" class="text-[12px] text-[#303030]"
+                  >Características</a
+                >
+              </li>
+              <li><a href="#" class="text-[12px] text-[#303030]">Demo</a></li>
+              <li>
+                <a href="#" class="text-[12px] text-[#303030]">Restaurantes</a>
+              </li>
+              <li>
+                <a href="#" class="text-[12px] text-[#303030]">Repartidor</a>
+              </li>
+            </ul>
+
+            <!-- ACCEDER Button -->
+            <div
+              class="button-container flex justify-between items-center gap-[25px]"
+            >
+              <img src="./icons/header-bars.svg" alt="header-bars" />
+              <a
+                href="#"
+                class="text-[12px] font-bold hidden md:inline-block bg-[#3CB018] text-white px-4 py-3 rounded-[5px]"
+                >ACCEDER</a
+              >
+            </div>
+          </nav>
+        </header>
+        <!-- Hero Section -->
+
+        <div class="hero-main-container">
+          <div class="hero-container px-4 flex justify-between items-center">
+            <div class="hero-content">
+              <div class="name">
+                <span class="text-[16px] font-medium text-[#4FB32F]"
+                  >Manjar2Go</span
+                >
+              </div>
+              <div class="heading flex flex-col">
+                <span class="text-[40px] font-bold text-[#3CB018]">
+                  Tu comida favorita
+                </span>
+                <span class="text-[36px] font-bold text-[#595959]">
+                  al alcance de tus manos
+                </span>
+              </div>
+              <div class="description my-1">
+                <p class="text-[12px] font-normal text-[#303030]">
+                  Manjar2Go es tu alternativa para ordenar la comida que <br />
+                  te encanta desde la comodidad de tu hogar, trabajo o <br />
+                  donde quiera que estés.
+                </p>
+              </div>
+              <div class="download-options my-4 flex gap-[20px]">
+                <img
+                  src="./images/Download_on_the_App_Store_logo.png"
+                  alt="apple-store"
+                />
+                <img
+                  src="./images/Google_Play_Store_badge_EN 1.png"
+                  alt="google-play"
+                />
+              </div>
+            </div>
+            <div class="hero-image-container">
+              <div class="hero-image">
+                <img src="./images/hero.png" alt="hero-image" />
+              </div>
+              <div
+                class="option-main-container flex items-center justify-between gap-[25px]"
+              >
+                <div class="option-container flex items-center justify-center">
+                  <div class="option-logo">
+                    <img src="./icons/entrega.svg" alt="entrega" />
+                  </div>
+                  <div class="option">
+                    <div class="option-label">
+                      <span class="text-[14px] font-bold text-[#ffffff]"
+                        >Entrega</span
+                      >
+                    </div>
+                    <div class="option-text">
+                      <span
+                        class="text-[10px] font-normal text-[#ffffff] flex flex-col"
+                        >Menos de 30
+                        <span class="text-[10px] font-normal text-[#ffffff]">
+                          minutos</span
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="option-container flex items-center justify-center">
+                  <div class="option-logo">
+                    <img src="./icons/variedad.svg" alt="Variedad" />
+                  </div>
+                  <div class="option">
+                    <div class="option-label">
+                      <span class="text-[14px] font-bold text-[#ffffff]"
+                        >Variedad</span
+                      >
+                    </div>
+                    <div class="option-text">
+                      <span
+                        class="text-[10px] font-normal text-[#ffffff] flex flex-col"
+                        >Numerosos
+                        <span class="text-[10px] font-normal text-[#ffffff]"
+                          >restaurantes</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="option-container flex items-center justify-center">
+                  <div class="option-logo">
+                    <img src="./icons/oportunidad.svg" alt="Oportunidad" />
+                  </div>
+                  <div class="option">
+                    <div class="option-label">
+                      <span class="text-[14px] font-bold text-[#ffffff]"
+                        >Oportunidad</span
+                      >
+                    </div>
+                    <div class="option-text">
+                      <span
+                        class="text-[10px] font-normal text-[#ffffff] flex flex-col"
+                        >Beneficios para tu
+                        <span class="text-[10px] font-normal text-[#ffffff]"
+                          >local</span
+                        >
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Stats Section -->
+
+          <div
+            class="stats-container flex justify-center items-center gap-[50px]"
+          >
+            <div class="stats flex flex-col items-center">
+              <div class="stats-count">
+                <span class="text-[39px] font-semibold text-[#ffffff]"
+                  >1975+</span
+                >
+              </div>
+              <div class="stats-label">
+                <span class="text-[12px] font-medium text-[#ffffff]"
+                  >Total Products</span
+                >
+              </div>
+            </div>
+            <div class="stats flex flex-col items-center">
+              <div class="stats-count">
+                <span class="text-[39px] font-semibold text-[#ffffff]"
+                  >2880+</span
+                >
+              </div>
+              <div class="stats-label">
+                <span class="text-[12px] font-medium text-[#ffffff]"
+                  >Satisfied Clients</span
+                >
+              </div>
+            </div>
+            <div class="stats flex flex-col items-center">
+              <div class="stats-count">
+                <span class="text-[39px] font-semibold text-[#ffffff]"
+                  >3219+</span
+                >
+              </div>
+              <div class="stats-label">
+                <span class="text-[12px] font-medium text-[#ffffff]"
+                  >Project Completed</span
+                >
+              </div>
+            </div>
+            <div class="stats flex flex-col items-center">
+              <div class="stats-count">
+                <span class="text-[39px] font-semibold text-[#ffffff]"
+                  >100%</span
+                >
+              </div>
+              <div class="stats-label">
+                <span class="text-[12px] font-medium text-[#ffffff]"
+                  >Guarantee</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-container-main">
+        <div class="why-us-main-container">
+          <div
+            class="why-us-container flex justify-center items-center gap-[80px]"
+          >
+            <div class="why-us-hero">
+              <img src="./images/why-us.png" alt="why-us" />
+            </div>
+            <div class="why-us-content-container">
+              <div class="why-us-content">
+                <div class="heading">
+                  <span
+                    class="text-[23px] font-bold text-[#07AA07] flex flex-col"
+                    >Atendiendo<span
+                      class="text-[23px] font-bold text-[#303030] -mt-1"
+                      >tus necesidades</span
+                    ></span
+                  >
+                </div>
+                <div class="description mt-[25px] mb-[50px]">
+                  <span class="text-[11px] font-normal text-[#303030]"
+                    >En M2GO hemos desarrollado esta plataforma para agilizar
+                    sus solicitudes. Sabemos lo que deseas y comprendemos tus
+                    necesidades. Por ello, nos enfocamos en satisfacer cada una
+                    de las exigencias al asociarnos con restaurantes de
+                    reconocida trayectoria cerca de ti.</span
+                  >
+                </div>
+                <div class="why-us-footer flex items-center gap-[100px]">
+                  <div class="wrapper">
+                    <div
+                      class="testmonio flex items-center gap-[15px] mb-[15px]"
+                    >
+                      <div class="bar">
+                        <img
+                          src="./icons/signature-bar.svg"
+                          alt="signature-bar"
+                        />
+                      </div>
+                      <div class="ceo mt-[-7px]">
+                        <span
+                          class="text-[10px] font-normal italic text-[#303030]"
+                          >Testimonio del CEO</span
+                        >
+                      </div>
+                    </div>
+                    <div class="signature">
+                      <img src="./icons/signature.svg" alt="signature" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <span class="text-[16px] font-normal text-[#000000]"
+                      >Pendiente</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features-main-container px-[80px] py-[50px]">
+          <div class="feature-heading mb-[40px]">
+            <span class="text-[22px] font-bold text-[#303030]"
+              >¿Cómo funciona la App?</span
+            >
+          </div>
+          <div class="features-container flex justify-between items-start">
+            <div class="features-content-container">
+              <div class="features-description w-[390px]">
+                <span class="text-[12px] font-normal text-[#303030]"
+                  >M2GO podría convertirse en tu app favorita para pedir comida.
+                  Nos dedicamos a ofrecer un servicio robusto, seguro y
+                  eficiente, pensado tanto para empresas como para consumidores,
+                  garantizando una experiencia fácil, rápida y de alta
+                  calidad.</span
+                >
+              </div>
+              <div
+                class="features-checklist px-[20px] py-[40px] flex flex-col gap-[10px]"
+              >
+                <div class="list flex items-center gap-[5px]">
+                  <img src="./icons/circle-check.svg" alt="verified" />
+                  <span class="text-[12px] font-normal text-[#303030]"
+                    >Respuesta rápida</span
+                  >
+                </div>
+                <div class="list flex items-center gap-[5px]">
+                  <img src="./icons/circle-check.svg" alt="verified" />
+                  <span class="text-[12px] font-normal text-[#303030]"
+                    >Interfaz de usuario sencilla</span
+                  >
+                </div>
+                <div class="list flex items-center gap-[5px]">
+                  <img src="./icons/circle-check.svg" alt="verified" />
+                  <span class="text-[12px] font-normal text-[#303030]"
+                    >Staff profesional</span
+                  >
+                </div>
+              </div>
+              <div class="download-options flex gap-[20px]">
+                <img
+                  src="./images/Download_on_the_App_Store_logo.png"
+                  alt="apple-store"
+                />
+                <img
+                  src="./images/Google_Play_Store_badge_EN 1.png"
+                  alt="google-play"
+                />
+              </div>
+            </div>
+            <div class="features-card-main-container">
+              <div class="heading flex justify-center items-center">
+                <span class="text-[16px] font-normal text-[#303030]"
+                  >Íconos pendientes</span
+                >
+              </div>
+              <div
+                class="features-card-container mt-[-12px] flex justify-between items-center gap-[22px]"
+              >
+                <div
+                  class="wrapper flex flex-col justify-between items-start gap-[22px]"
+                >
+                  <div
+                    class="card-container flex items-center justify-start px-[10px] py-[15px] rounded-[7px] cards-shadow w-[200px] h-[120px] gap-[6px]"
+                  >
+                    <div class="card-logo">
+                      <img src="./icons/explora.svg" alt="explora" />
+                    </div>
+                    <div class="card">
+                      <div class="card-label">
+                        <span class="text-[14px] font-bold text-[#303030]"
+                          >Explora</span
+                        >
+                      </div>
+                      <div class="card-text">
+                        <span
+                          class="text-[10px] font-normal text-[#303030] flex flex-col"
+                          >Listado de
+                          <span class="text-[10px] font-normal text-[#303030]"
+                            >restaurantes basados
+                          </span>
+                          <span class="text-[10px] font-normal text-[#303030]"
+                            >en su localización.</span
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-container flex items-center justify-start px-[10px] py-[10px] rounded-[7px] cards-shadow w-[200px] h-[120px] gap-[6px]"
+                  >
+                    <div class="card-logo">
+                      <img
+                        src="./icons/entrega-y -recogida.svg"
+                        alt="entrega-y-recogida"
+                      />
+                    </div>
+                    <div class="card">
+                      <div class="card-label">
+                        <span class="text-[14px] font-bold text-[#303030]"
+                          >Entrega y Recogida</span
+                        >
+                      </div>
+                      <div class="card-text">
+                        <span
+                          class="text-[10px] font-normal text-[#303030] flex flex-col"
+                          >Servicio de entrega a
+                          <span class="text-[10px] font-normal text-[#303030]"
+                            >domicilio o recogido
+                          </span>
+                          <span class="text-[10px] font-normal text-[#303030]"
+                            >en el restaurante.</span
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="wrapper flex flex-col justify-between items-start gap-[22px]"
+                >
+                  <div
+                    class="card-container flex items-center justify-start px-[10px] py-[15px] rounded-[7px] cards-shadow w-[200px] h-[120px] gap-[6px]"
+                  >
+                    <div class="card-logo">
+                      <img src="./icons/seguimiento.svg" alt="Seguimiento" />
+                    </div>
+                    <div class="card">
+                      <div class="card-label">
+                        <span class="text-[14px] font-bold text-[#303030]"
+                          >Seguimiento</span
+                        >
+                      </div>
+                      <div class="card-text">
+                        <span
+                          class="text-[10px] font-normal text-[#303030] flex flex-col"
+                          >Sigue tu pedido en
+                          <span class="text-[10px] font-normal text-[#303030]"
+                            >vivo, desde principio a
+                          </span>
+                          <span class="text-[10px] font-normal text-[#303030]"
+                            >fin.</span
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card-container flex items-center justify-start px-[15px] py-[15px] rounded-[7px] cards-shadow w-[200px] h-[120px] gap-[6px]"
+                  >
+                    <div class="card-logo">
+                      <img src="./icons/pago-online.svg" alt="Pago Online" />
+                    </div>
+                    <div class="card">
+                      <div class="card-label">
+                        <span class="text-[14px] font-bold text-[#303030]"
+                          >Pago Online</span
+                        >
+                      </div>
+                      <div class="card-text">
+                        <span
+                          class="text-[10px] font-normal text-[#303030] flex flex-col"
+                          >Puedes pagar online
+                          <span class="text-[10px] font-normal text-[#303030]"
+                            >con Tarjeta de Crédito,
+                          </span>
+                          <span class="text-[10px] font-normal text-[#303030]"
+                            >Débito o PayPal.</span
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: #fff; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  padding: 0;
+  margin: 0;
+}
+
+.top-container {
+  background-image: url("./images/hero-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-position: top left; */
+  /* display: block;
+  width: 100%;
+  height: 100%; */
+}
+
+.stats-container {
+  padding: 250px 0px 150px 0px;
+}
+
+.why-us-content-container {
+  max-width: 415px;
+}
+
+.bottom-container-main {
+  margin-top: -50px;
+  background: #fff;
+  border-radius: 55px;
+}
+
+.why-us-main-container {
+  padding: 100px 80px;
+}
+
+.hero-main-container {
+  padding: 50px 80px;
+}
+
+.cards-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.download-options img {
+  width: 135px;
+}
+
+@media screen and (max-width: 769px) {
+  .button-container img {
+    display: none;
+  }
+}
