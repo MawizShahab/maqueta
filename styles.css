@@ -55,6 +55,12 @@ span {
   width: 135px;
 }
 
+.simple-form-container {
+  background-image: url("./images/form-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 769px) {
   .button-container img {
     display: none;
