@@ -61,8 +61,138 @@ span {
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 769px) {
+.unique-card {
+  background-image: url("./images/cards/card-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .top-container {
+    background-size: cover;
+  }
   .button-container img {
     display: none;
   }
+
+  .hero-container {
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .hero-main-container,
+  .stats-container,
+  .why-us-main-container,
+  .card-main-wrapper,
+  .features-main-container,
+  .form-container {
+    padding: 35px 25px !important;
+  }
+
+  .hero-content .heading span,
+  .stats-count span,
+  .cards-heading span,
+  .form-heading span,
+  .why-us-content .heading span,
+  .feature-heading span {
+    font-size: 18px;
+  }
+
+  .option-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .option-text {
+    text-align: center;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .features-container {
+    gap: 50px;
+  }
+
+  .features-card-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features-card-main-container,
+  .features-card-container,
+  .features-card-container .wrapper,
+  .card-container {
+    width: 100% !important;
+  }
+
+  .bottom-container-main {
+    margin-top: -35px;
+    background: #fff;
+    border-radius: 25px;
+  }
+
+  /* .features-card-container .card-container {
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .why-us-container,
+  .cards-wrapper,
+  .form-container,
+  .features-container,
+  .fields-container,
+  .fields-container .fields {
+    flex-direction: column;
+  }
+
+  .simple-form,
+  .fields input,
+  .features-description {
+    width: 100%;
+  }
+
+  .simple-form-main-container {
+    padding: 35px 0;
+  }
+
+  .footer-main-container {
+    padding: 35px 25px 0 25px !important;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links .links {
+    align-items: flex-start;
+  }
+
+  .button-container {
+    display: none !important;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  /* .cards-wrapper .card {
+    width: 100%;
+    height: auto;
+  } */
 }
