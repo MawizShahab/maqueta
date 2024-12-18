@@ -13,16 +13,16 @@
     <div class="body-main-container bg-white">
       <div class="top-container">
         <!-- Navbar -->
-        <header>
+        <header class="relative bg-white">
           <nav
-            class="container-fluid mx-auto flex flex-col md:flex-row justify-between items-center px-4 py-3"
+            class="container-fluid flex items-center justify-between px-4 py-3"
           >
             <!-- Logo -->
             <a href="#" class="flex items-center">
-              <img src="./icons/logo.svg" alt="Logo" />
+              <img src="./icons/logo.svg" alt="Logo" class="h-8" />
             </a>
 
-            <!-- Mobile Menu Button -->
+            <!-- Mobile Toggle Button -->
             <button
               id="menu-toggle"
               class="md:hidden text-gray-700 focus:outline-none"
@@ -43,10 +43,10 @@
               </svg>
             </button>
 
-            <!-- Navigation Links (Initially hidden on mobile) -->
+            <!-- Navigation Links -->
             <ul
               id="navbar"
-              class="hidden md:flex flex-col md:flex-row space-x-6 items-center gap-[20px]"
+              class="hidden flex-col items-start gap-3 p-4 md:flex md:flex-row md:static md:gap-6"
             >
               <li>
                 <a href="#" class="text-[12px] font-bold text-[#303030]"
@@ -61,7 +61,9 @@
                   >Características</a
                 >
               </li>
-              <li><a href="#" class="text-[12px] text-[#303030]">Demo</a></li>
+              <li>
+                <a href="#" class="text-[12px] text-[#303030]">Demo</a>
+              </li>
               <li>
                 <a href="#" class="text-[12px] text-[#303030]">Restaurantes</a>
               </li>
@@ -69,7 +71,6 @@
                 <a href="#" class="text-[12px] text-[#303030]">Repartidor</a>
               </li>
             </ul>
-
             <!-- ACCEDER Button -->
             <div
               class="button-container flex justify-between items-center gap-[25px]"
@@ -86,7 +87,9 @@
         <!-- Hero Section -->
 
         <div class="hero-main-container">
-          <div class="hero-container px-4 flex justify-between items-center">
+          <div
+            class="hero-container px-4 flex md:flex-row flex-col justify-between items-center"
+          >
             <div class="hero-content">
               <div class="name">
                 <span class="text-[16px] font-medium text-[#4FB32F]"
@@ -303,6 +306,124 @@
                       >Pendiente</span
                     >
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cards Section -->
+        <div class="cards-main-container bg-[#FAFAFA]">
+          <div class="card-main-wrapper px-[80px] py-[100px]">
+            <div class="cards-content-container pb-[50px]">
+              <div
+                class="cards-content-container flex flex-col gap-[5px] items-center"
+              >
+                <div
+                  class="cards-heading px-[10px] py-[10px] border-b-[#07AA07] border-b-[3px]"
+                >
+                  <span class="text-[23px] font-semibold text-[#303030]"
+                    >Beneficios de <span class="text-[#3CB018]">M2GO</span> para
+                    tu negocio</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="cards-container">
+              <div class="card-label text-center">
+                <span class="text-[16px] text-[#000000] font-normal"
+                  >Fotos -> Íconos pendientes</span
+                >
+              </div>
+              <div
+                class="cards-wrapper flex justify-center items-center gap-[25px]"
+              >
+                <div
+                  class="card flex flex-col justify-center items-center bg-[#ffffff] rounded-[6.96px] cards-shadow px-[15px] py-[15px] h-[250px] w-[175px]"
+                >
+                  <div class="card-image">
+                    <img
+                      class="rounded-5"
+                      src="./images/cards/card1.png"
+                      alt="visibilidad"
+                    />
+                  </div>
+                  <div class="card-heading pt-[20px] pb-[10px]">
+                    <span class="text-[12px] text-[#303030] font-bold"
+                      >Visibilidad</span
+                    >
+                  </div>
+                  <div
+                    class="card-description text-center flex justify-center items-center w-[115px]"
+                  >
+                    <span
+                      class="text-[10px] text-[#303030] font-normal opacity-70"
+                      >Le darás visibilidad y credibilidad a tu empresa en la
+                      Web</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card flex flex-col justify-center items-center bg-[#ffffff] rounded-[6.96px] cards-shadow px-[15px] py-[15px] h-[250px] w-[175px]"
+                >
+                  <div class="card-image">
+                    <img
+                      class="rounded-5"
+                      src="./images/cards/card2.png"
+                      alt="Exposición"
+                    />
+                  </div>
+                  <div class="card-heading pt-[20px] pb-[10px]">
+                    <span class="text-[12px] text-[#303030] font-bold"
+                      >Exposición</span
+                    >
+                  </div>
+                  <div
+                    class="card-description text-center flex justify-center items-center w-[115px]"
+                  >
+                    <span
+                      class="text-[10px] text-[#303030] font-normal opacity-70"
+                      >Ganarás clientes nuevos que utilizan nuestra
+                      plataforma.</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card flex flex-col justify-center items-center bg-[#ffffff] rounded-[6.96px] cards-shadow px-[15px] py-[15px] h-[250px] w-[175px]"
+                >
+                  <div class="card-image">
+                    <img
+                      class="rounded-5"
+                      src="./images/cards/card3.png"
+                      alt="Análisis"
+                    />
+                  </div>
+                  <div class="card-heading pt-[20px] pb-[10px]">
+                    <span class="text-[12px] text-[#303030] font-bold"
+                      >Análisis</span
+                    >
+                  </div>
+                  <div
+                    class="card-description text-center flex justify-center items-center w-[115px]"
+                  >
+                    <span
+                      class="text-[10px] text-[#303030] font-normal opacity-70"
+                      >Conocerás mejor las preferencias de los clientes.</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="card unique-card flex flex-col justify-center items-center rounded-[6.96px] px-[15px] h-[250px] w-[175px]"
+                >
+                  <a href="#">
+                    <div
+                      class="card-link flex justify-center items-center gap-[7px] px-[16px] py-[10px] border-[1.39px] border-solid border-[#ffffff] rounded-[5px]"
+                    >
+                      <span class="text-[10px] text-[#ffffff] font-semibold"
+                        >Ver todos
+                      </span>
+                      <img src="./icons/chevron.svg" alt="chevron" />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -616,7 +737,7 @@
                 <a href="#"
                   ><img src="./icons/facebook-square-brands.svg" alt="facebook"
                 /></a>
-                <a class="mt-[-2px]" href="#"
+                <a href="#"
                   ><img src="./icons/instagram.svg" alt="instagram"
                 /></a>
               </div>
