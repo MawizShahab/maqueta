@@ -152,11 +152,21 @@ span {
   .simple-form,
   .fields input,
   .features-description {
-    width: 100%;
+    width: 100% !important;
   }
 
   .simple-form-main-container {
     padding: 35px 0;
+  }
+
+  .cards-content-container .cards-heading {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form-description {
+    text-align: center;
+    padding: 0 25px;
   }
 
   .footer-main-container {
@@ -165,7 +175,7 @@ span {
 
   .footer-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start !important;
     gap: 25px;
   }
 
